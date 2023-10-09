@@ -15,7 +15,7 @@ function Home() {
       <Link to="/proyects"className="ptree"> <strong><ParrafoCambiante  textoInicial="Desarrollador Web" textoHover="Proyectos" /></strong></Link>
     </div>
     <div>
-            <img id="profilepic" src="./src/assets/profilepic1png.png" alt="fotoperfil" />
+            <img id="profilepic" src="src/assets/profilepic1png.png" alt="fotoperfil" />
         </div>
         <Boton></Boton>
         </div>
