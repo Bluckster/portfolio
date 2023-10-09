@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+
+@keyframes pulsate-fwd {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.1)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+;
+
+@keyframes BTN {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0);
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        transform: translateY(-30px) rotate(-6deg);
+    }
+
+    30% {
+        transform: translateY(15px) rotate(6deg);
+    }
+
+    45% {
+        transform: translateY(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        transform: translateY(9px) rotate(2.4deg);
+    }
+
+    75% {
+        transform: translateY(-6px) rotate(-1.2deg);
+    }
+}
+
+;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif;
+
+}
+
+body {
+    background-color: #1C2632;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.contenedor {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: relative;
+    top: 40vh;
+    background-color: none;
+    padding: 1em;
+
+}
+
+#profilepic {
+    z-index: -9;
+    position: relative;
+    top: -17vh;
+    right: 0;
+    bottom: 0;
+    left: -22vh;
+    line-height: 0;
+
+}
+
+.texto-cambiar {
+    transition: content 511ms ease;
+}
+
+.pone {
+    color: #826B4C;
+    display: block;
+}
+
+.ptwo {
+    color: #ffff;
+    display: block;
+}
+
+.ptree {
+    color: #826B4C;
+    display: block;
+}
+
+
+.change {
+    display: inline;
+    width: 100%;
+}
+
+strong {
+    background-color: none;
+}
+
+#show {
+    display: none;
+}
+
+#hidden {
+    display: none;
+}
+
+.btncontenedor {
+    font-size: large;
+    position: relative;
+    top: -57rem;
+    margin: 2em;
+}
+
+.mobile-tap-area {
+    background: none;
+    border: none;
+    display: block;
+    position: relative;
+    margin: 0.5em;
+    animation: pulsate-fwd .8s ease-in-out infinite both;
+}
+
+
+@media screen and (orientation: landscape) {
+    #profilepic {
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        height: 500px;
+
+    }
+
+    .btncontenedor {
+        font-size: large;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        position: relative;
+        top: 40vh;
+        background-color: none;
+        padding: 1em;
+
+    }
+
+    .mobile-tap-area {
+        background: none;
+        border: none;
+        display: block;
+        position: relative;
+        left: -65vh;
+        animation: pulsate-fwd .8s ease-in-out infinite both;
+        margin-right: 6em;
+    }
+
+    body {
+        overflow: auto
+    }
+
+}
+
+@media screen and (max-width: 930px) {
+    .contenedor {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 930px) {
+    .btncontenedor {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #profilepic {
+        width: 150vh;
+        height: 150vh;
+    }
+
+    .contenedor {
+        margin: 8em;
+        position: relative;
+        top: 1em;
+        font-size: xx-large;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor p {
+        display: inline-block;
+    }
+
+    .contenedor a {
+        display: inline;
+        width: 400px;
+    }
+}
+
+
+/* Css del About*/
+.btndownload {
+    background-color: #826B4C;
+    text-decoration: none;
+    color: white;
+    margin: 3em;
+
+}
+
+.absubtitle {
+    color: white;
+    font-size: small;
+    /* position: relative;
+    top: 15vh; */
+}
+
+.absubtitle span {
+    color: #826B4C;
+    font-size: small;
+    top: 15vh;
+}
+
+.abtitle {
+    color: white;
+    font-size: small;
+    /* position: relative;
+    top: 10vh;
+    margin: 1em; */
+}
+
+.abimg {
+    width: 10rem;
+    height: auto;
+    /* position: relative; */
+
+}
+
+.abcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 4em;
+}
+
+.abttart {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: medium;
+}
+
+.abarticle {
+    color: #826B4C;
+    font-size: small;
+    margin: 3em;
+    text-align: left;
+    margin-top: 1em;
+}
+
+.abtext {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+
+.abartcontainer {
+    width: 80%;
+
+    margin: 0 auto;
+}
+
+/* Css contact*/
+.ctcontainer {
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ctpone {
+
+    color: #826B4C;
+    font-size: small;
+}
+
+.ctptwo {
+
+    color: white;
+    font-size: small;
+}
+
+.cttre {
+
+    color: #826B4C;
+    font-size: small;
+}
+
+.ctgitlogo {
+    width: 2em;
+}
+
+.ctimgcontainer {
+    display: flex;
+    justify-content: center;
+    column-gap: 2em;
+    margin-right: 5em;
+    margin-left: 5em;
+    color: white;
+}
+
+.ctdiv {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5em
+}
+
+.ctimgcontainer a {
+    color: white;
+}
+
+@media screen and (min-width: 1025px) {
+    .abimg {
+        width: 45vh;
+    }
+   .abtitle {
+        font-size: xx-large;
+    }
+    .abartcontainer{
+        width: 80%;
+        margin-right: 5em;
+        padding-right: 2em;
+    }
+    .ctcontainer p{
+      font-size: xx-large;
+    }
+    .ctcontainer{
+        padding-top: 16em;
+    }
+    
+    .abarticle{
+        font-size: x-large;
+    }
+    .abttart{
+        font-size: x-large;
+    }
+    .btndownload{
+        margin-left: 5rem;
+        margin-top: -1rem;
+    }
+    *{
+       overflow: hidden;
+    }
+}
+.navbar ul{
+    color:white;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+   column-gap: 2em;
+   padding-top: 2em;
+}
+.navbar li{
+    color: white;
+}
+@media screen and (min-width:360px){
+    body{
+        overflow: auto;
+    }
+}
