@@ -58,10 +58,10 @@
     transition: transform 0.2s;
   }
   .photo{
-    background-image: url(./src/assets/pag_filosofos.PNG)
+    background-image: url(/src/assets/pag_filosofos.PNG)
   }
   #photo22{
-    background-image: url(./src/assets/ecommerce_juegos.PNG)
+    background-image: url(/src/assets/ecommerce_juegos.PNG)
   }
   .blog-card .details,
   .blog-card .details ul {

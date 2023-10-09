@@ -15,8 +15,8 @@ export const contact = () => {
 
     </div>
     <div className='ctimgcontainer'>
-        <div className='ctdiv' ><img src="./src/assets/gitlogo.png" alt="githublogo" className='ctgitlogo' /><a href="https://www.linkedin.com/in/ignacio-f-iba%C3%B1ez/" target='_blank'><p>GITHUB</p></a></div>
-       <div className='ctdiv'> <img src="./src/assets/linkedin.png" alt="logo linkedin" className='ctgitlogo' /><a href="https://github.com/Bluckster" target='_blank'><p>LINKEDIN</p></a></div>
+        <div className='ctdiv' ><img src="/src/assets/gitlogo.png" alt="githublogo" className='ctgitlogo' /><a href="https://www.linkedin.com/in/ignacio-f-iba%C3%B1ez/" target='_blank'><p>GITHUB</p></a></div>
+       <div className='ctdiv'> <img src="/src/assets/linkedin.png" alt="logo linkedin" className='ctgitlogo' /><a href="https://github.com/Bluckster" target='_blank'><p>LINKEDIN</p></a></div>
     </div>
     </>
   )

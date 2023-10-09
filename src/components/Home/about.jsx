@@ -22,7 +22,7 @@ export const about = () => {
         <div>
           <img
             className="abimg"
-            src="./src/assets/profileimage2.png"
+            src="/src/assets/profileimage2.png"
             alt="imagen perfil"
           />
         </div>
@@ -40,7 +40,7 @@ export const about = () => {
             rubro aportando mi conocimiento y actitud activa por el aprendizaje.
           </p>
           <a
-            href="src/assets/Curriculum_Ignacio_Ibañez.pdf"
+            href="/src/assets/Curriculum_Ignacio_Ibañez.pdf"
             download="Curriculum Ignacio Ibañez.pdf"
             title="descarga currriculum"
             className="btndownload"
